@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="#00fa9a">
+ <form method="post">
+     {% csrf_token %}
+        do you want to delete "{{ object }}" ?
+     {{ form.as_p }}
+     <input type="submit" value="Delete">
+
+ </form>
+</body>
+</html>

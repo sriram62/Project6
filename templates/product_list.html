@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="#00fa9a">
+<table>
+    {% for p in object_list %}
+        <tr>
+            <td>{{ p.pid }}</td>
+            <td>{{ p.pname }}</td>
+            <td>{{ p.pcost }}</td>
+        </tr>
+    {% endfor %}
+ </table>
+</body>
+</html>
